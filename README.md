@@ -31,7 +31,7 @@ Every new push to `main` will be deployed automatically.
 
 - Review and refine the current exploratory Draxis mark before treating it as a final identity.
 - Keep project narratives and development statuses current.
-- The primary contact address is `muhammad-amien@draxis-digital.my.id`.
+- Contact options are available through the website without displaying email addresses in the page copy.
 - For a fully self-hosted setup, download and serve the Google Fonts locally.
 
 ## Project structure
