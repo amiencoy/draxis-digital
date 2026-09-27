@@ -9,7 +9,7 @@ function setTheme(theme, persist = false) {
     'aria-label',
     theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme',
   );
-  themeColor?.setAttribute('content', theme === 'dark' ? '#11120f' : '#f0eee7');
+  themeColor?.setAttribute('content', theme === 'dark' ? '#120b22' : '#f8f5ff');
   if (persist) localStorage.setItem('draxis-theme', theme);
 }
 

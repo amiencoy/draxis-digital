@@ -29,7 +29,7 @@ Every new push to `main` will be deployed automatically.
 
 ## Before launch
 
-- Replace the temporary `D/` monogram when the final logo is ready.
+- Review and refine the current exploratory Draxis mark before treating it as a final identity.
 - Keep project narratives and development statuses current.
 - The primary contact address is `muhammad-amien@draxis-digital.my.id`.
 - For a fully self-hosted setup, download and serve the Google Fonts locally.
@@ -37,7 +37,8 @@ Every new push to `main` will be deployed automatically.
 ## Project structure
 
 - `index.html` — page structure and content
-- `styles.css` — visual system, themes, layout, and responsive styles
+- `styles.css` — visual system, dreamy light/dark themes, layout, and responsive styles
+- `assets/draxis-mark.png` — current exploratory brand mark generated from the early logo references
 - `script.js` — theme switcher, mobile navigation, and reveal animations
 - `_headers` — Cloudflare Pages security headers
 - `robots.txt` and `sitemap.xml` — basic search metadata
