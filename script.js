@@ -7,7 +7,7 @@ function setTheme(theme, persist = false) {
   document.documentElement.dataset.theme = theme;
   themeToggle?.setAttribute(
     'aria-label',
-    theme === 'dark' ? 'Ganti ke tema terang' : 'Ganti ke tema gelap',
+    theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme',
   );
   themeColor?.setAttribute('content', theme === 'dark' ? '#11120f' : '#f0eee7');
   if (persist) localStorage.setItem('draxis-theme', theme);

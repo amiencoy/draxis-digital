@@ -1,47 +1,47 @@
 # Draxis Digital
 
-Static landing page untuk [draxis-digital.my.id](https://draxis-digital.my.id), dibuat tanpa framework agar ringan dan mudah dideploy ke Cloudflare Pages.
+Static website for [draxis-digital.my.id](https://draxis-digital.my.id), built without a framework to stay lightweight and easy to deploy on Cloudflare Pages.
 
-## Menjalankan secara lokal
+## Local preview
 
-Tidak ada dependency atau build step. Jalankan server static apa pun dari root repository, misalnya:
+There are no dependencies or build steps. Run any static file server from the repository root, for example:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Lalu buka `http://localhost:8080`.
+Then open `http://localhost:8080`.
 
-## Deploy ke Cloudflare Pages
+## Deploy to Cloudflare Pages
 
-1. Buka **Workers & Pages** di dashboard Cloudflare.
-2. Pilih **Create application → Pages → Connect to Git**.
-3. Pilih repository ini dan branch produksi `main`.
-4. Gunakan konfigurasi berikut:
+1. Open **Workers & Pages** in the Cloudflare dashboard.
+2. Choose **Create application → Pages → Connect to Git**.
+3. Select this repository and use `main` as the production branch.
+4. Use the following build settings:
 
    - Framework preset: `None`
    - Build command: `exit 0`
    - Build output directory: `/`
 
-5. Setelah deploy berhasil, buka **Custom domains**, lalu tambahkan `draxis-digital.my.id`.
+5. Once the deployment succeeds, open **Custom domains** and add `draxis-digital.my.id`.
 
-Setiap push baru ke branch `main` akan otomatis dideploy oleh Cloudflare.
+Every new push to `main` will be deployed automatically.
 
-## Sebelum diluncurkan
+## Before launch
 
-- Ganti monogram `D/` dengan logo final bila sudah tersedia.
-- Perbarui narasi proyek dan statusnya ketika eksperimen berkembang.
-- Alamat kontak utama saat ini adalah `muhammad-amien@draxis-digital.my.id`.
-- Jika tidak ingin memuat Google Fonts, unduh font dan host secara lokal.
+- Replace the temporary `D/` monogram when the final logo is ready.
+- Keep project narratives and development statuses current.
+- The primary contact address is `muhammad-amien@draxis-digital.my.id`.
+- For a fully self-hosted setup, download and serve the Google Fonts locally.
 
-## Struktur
+## Project structure
 
-- `index.html` — struktur dan konten halaman
-- `styles.css` — seluruh visual, layout, dan responsive styling
-- `script.js` — menu mobile, reveal animation, dan tahun copyright
-- `_headers` — security headers untuk Cloudflare Pages
-- `robots.txt` dan `sitemap.xml` — basic SEO
+- `index.html` — page structure and content
+- `styles.css` — visual system, themes, layout, and responsive styles
+- `script.js` — theme switcher, mobile navigation, and reveal animations
+- `_headers` — Cloudflare Pages security headers
+- `robots.txt` and `sitemap.xml` — basic search metadata
 
-## Lisensi
+## License
 
-Kode situs dapat digunakan dan dimodifikasi oleh Draxis Digital. Tambahkan lisensi open-source pilihanmu sebelum membuka repository untuk kontribusi publik.
+The website source is owned by Draxis Digital. Add an explicit open-source license before inviting public reuse or contributions.
