@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Draxis Digital merancang dan membangun website, aplikasi, serta produk digital yang terasa tajam, cepat, dan siap tumbuh."
+    />
+    <meta name="theme-color" content="#f0eee7" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem('draxis-theme');
+        const theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <meta property="og:title" content="Draxis Digital — We build digital things that move." />
+    <meta
+      property="og:description"
+      content="Studio digital independen untuk website, aplikasi, dan eksperimen open-source."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://draxis-digital.my.id" />
+    <title>Draxis Digital — Digital products, built with intent.</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Draxis Digital, kembali ke atas">
+        <span class="brand-mark" aria-hidden="true">D<span>/</span></span>
+        <span class="brand-name">Draxis<br />Digital</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+        <span class="sr-only">Buka menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigasi utama">
+        <a href="#services">Layanan</a>
+        <a href="#work">Karya</a>
+        <a href="#about">Tentang</a>
+        <button class="theme-toggle" type="button" aria-label="Ganti ke tema gelap" title="Ganti tema">
+          <span class="theme-toggle__sun" aria-hidden="true">☀</span>
+          <span class="theme-toggle__moon" aria-hidden="true">◐</span>
+        </button>
+        <a class="nav-cta" href="#contact">Mulai proyek <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-kicker reveal">
+          <span class="status-dot"></span>
+          Independent creative studio · Indonesia
+        </div>
+
+        <h1 id="hero-title" class="reveal">
+          Ideas, shaped into
+          <span class="hero-accent">experiences<span class="asterisk">✳</span></span>
+        </h1>
+
+        <div class="hero-bottom reveal">
+          <p>
+            Kami membantu ide menemukan bentuknya—melalui identitas, pengalaman, dan produk
+            digital yang terasa jernih, manusiawi, dan punya karakter.
+          </p>
+          <a class="circle-link" href="#services" aria-label="Lihat layanan kami">
+            <span>Explore</span>
+            <span class="arrow">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-ticker" aria-hidden="true">
+          <div class="ticker-track">
+            <span>STRATEGY</span><i>✦</i><span>DESIGN</span><i>✦</i><span>EXPERIMENTS</span><i>✦</i>
+            <span>STRATEGY</span><i>✦</i><span>DESIGN</span><i>✦</i><span>EXPERIMENTS</span><i>✦</i>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section-shell" id="services" aria-labelledby="services-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / What we do</p>
+          <h2 id="services-title">Built for the<br /><em>real world.</em></h2>
+          <p class="section-intro">
+            Kami menyatukan arah, cerita, dan eksekusi dalam proses yang dekat dan ringkas—agar
+            hasil akhirnya bukan hanya terlihat baik, tetapi juga terasa tepat.
+          </p>
+        </div>
+
+        <div class="service-list">
+          <article class="service-item reveal">
+            <span class="service-number">01</span>
+            <h3>Brand & Creative<br />Direction</h3>
+            <p>Menemukan karakter, bahasa visual, dan arah yang membuat sebuah ide mudah dikenali.</p>
+            <span class="service-icon" aria-hidden="true">↗</span>
+          </article>
+          <article class="service-item reveal">
+            <span class="service-number">02</span>
+            <h3>Web & Digital<br />Experience</h3>
+            <p>Website dan pengalaman interaktif yang intuitif, ekspresif, dan menyenangkan digunakan.</p>
+            <span class="service-icon" aria-hidden="true">↗</span>
+          </article>
+          <article class="service-item reveal">
+            <span class="service-number">03</span>
+            <h3>Ideas & Digital<br />Products</h3>
+            <p>Dari sketsa awal sampai produk yang hidup—termasuk eksperimen yang belum punya cetakan.</p>
+            <span class="service-icon" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-title">
+        <div class="section-shell">
+          <div class="section-heading work-heading reveal">
+            <p class="eyebrow">02 / Selected work</p>
+            <h2 id="work-title">Ideas from<br /><em>the lab.</em></h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-card--lime project-card--feature reveal">
+              <div class="project-meta">
+                <span>Trust & agency</span><span>Experimental</span>
+              </div>
+              <div class="project-visual wordmark-visual" aria-hidden="true">
+                <span class="project-glyph">A</span>
+                <strong>AXIONORM</strong>
+                <div class="visual-stamp">LAB / 01</div>
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3>Axionorm</h3>
+                  <p>Aturan yang menjaga bagaimana agen memahami konteks dan batas kewenangannya.</p>
+                </div>
+                <a href="https://github.com/amiencoy/axionorm" target="_blank" rel="noreferrer" aria-label="Buka Axionorm di GitHub">Explore ↗</a>
+              </div>
+            </article>
+
+            <article class="project-card project-card--coral reveal">
+              <div class="project-meta">
+                <span>Connected intelligence</span><span>Experimental</span>
+              </div>
+              <div class="project-visual wordmark-visual project-visual--rings" aria-hidden="true">
+                <span class="project-glyph">P</span>
+                <strong>PARABIONT</strong>
+                <div class="visual-stamp">LAB / 02</div>
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3>Parabiont Protocol</h3>
+                  <p>Eksperimen tentang hubungan agen yang persisten, terarah, dan tetap terkendali.</p>
+                </div>
+                <a href="https://github.com/amiencoy/parabiont-protocol" target="_blank" rel="noreferrer" aria-label="Buka Parabiont Protocol di GitHub">Explore ↗</a>
+              </div>
+            </article>
+
+            <article class="project-card project-card--violet reveal">
+              <div class="project-meta"><span>Shared context</span><span>Experimental</span></div>
+              <div class="project-visual wordmark-visual project-visual--offset" aria-hidden="true">
+                <span class="project-glyph">P/</span><strong>PARALAX</strong><div class="visual-stamp">LAB / 03</div>
+              </div>
+              <div class="project-info">
+                <div><h3>PARALAX MCP</h3><p>Jembatan agar konteks dapat berpindah tanpa kehilangan batas dan kepercayaan.</p></div>
+                <a href="https://github.com/amiencoy/paralax-mcp" target="_blank" rel="noreferrer" aria-label="Buka PARALAX MCP di GitHub">Explore ↗</a>
+              </div>
+            </article>
+
+            <article class="project-card project-card--sky project-card--feature reveal">
+              <div class="project-meta"><span>Digital reconnaissance</span><span>Active</span></div>
+              <div class="project-visual wordmark-visual project-visual--eye" aria-hidden="true">
+                <span class="project-glyph">◉</span><strong>LOPHIARCH</strong><div class="visual-stamp">LAB / 04</div>
+              </div>
+              <div class="project-info">
+                <div><h3>Lophiarch</h3><p>Asisten reconnaissance yang mengubah proses kompleks menjadi alur yang terpandu.</p></div>
+                <a href="https://github.com/amiencoy/lophiarch" target="_blank" rel="noreferrer" aria-label="Buka Lophiarch di GitHub">Explore ↗</a>
+              </div>
+            </article>
+
+            <article class="project-card project-card--rose reveal">
+              <div class="project-meta"><span>Community care</span><span>Pre-alpha</span></div>
+              <div class="project-visual wordmark-visual project-visual--shield" aria-hidden="true">
+                <span class="project-glyph">S</span><strong>SCRYMR</strong><div class="visual-stamp">LAB / 05</div>
+              </div>
+              <div class="project-info">
+                <div><h3>SCRYMR</h3><p>Sentinel komunitas Discord yang membantu moderator merespons risiko dengan lebih tenang.</p></div>
+                <a href="https://github.com/amiencoy/scrymr" target="_blank" rel="noreferrer" aria-label="Buka SCRYMR di GitHub">Explore ↗</a>
+              </div>
+            </article>
+
+            <article class="project-card project-card--sand reveal">
+              <div class="project-meta"><span>Universal access</span><span>Concept</span></div>
+              <div class="project-visual wordmark-visual project-visual--launch" aria-hidden="true">
+                <span class="project-glyph">↗</span><strong>CATAPULT</strong><div class="visual-stamp">LAB / 06</div>
+              </div>
+              <div class="project-info">
+                <div><h3>Catapult</h3><p>Gagasan untuk menyimpan akses secara mandiri dan menggunakannya kembali dengan sederhana.</p></div>
+                <a href="https://github.com/amiencoy/catapult" target="_blank" rel="noreferrer" aria-label="Buka Catapult di GitHub">Explore ↗</a>
+              </div>
+            </article>
+
+            <article class="project-card project-card--mint project-card--wide reveal">
+              <div class="project-meta"><span>Attached intelligence</span><span>Design stage</span></div>
+              <div class="project-visual wordmark-visual project-visual--wave" aria-hidden="true">
+                <span class="project-glyph">L</span><strong>LOPHIONT</strong><div class="visual-stamp">LAB / 07</div>
+              </div>
+              <div class="project-info">
+                <div><h3>Lophiont</h3><p>Carrier ringan yang dirancang untuk menghubungkan Lophiarch dengan agen dan sistem lain.</p></div>
+                <a href="https://github.com/amiencoy/lophiont" target="_blank" rel="noreferrer" aria-label="Buka Lophiont di GitHub">Explore ↗</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-shell" id="about" aria-labelledby="about-title">
+        <div class="about-grid">
+          <div class="about-sticky reveal">
+            <p class="eyebrow">03 / Why Draxis</p>
+            <div class="big-mark" aria-hidden="true">D<span>/</span></div>
+          </div>
+          <div class="about-copy">
+            <h2 id="about-title" class="reveal">
+              Small by design.<br />Big on <em>impact.</em>
+            </h2>
+            <p class="lead reveal">
+              Draxis Digital adalah studio independen tempat rasa ingin tahu bertemu dengan
+              ketelitian—untuk mengubah ide yang rumit menjadi pengalaman yang terasa sederhana.
+            </p>
+            <div class="principles">
+              <div class="principle reveal">
+                <span>01</span>
+                <h3>Direct collaboration</h3>
+                <p>Kamu bekerja langsung dengan orang yang mendesain dan membangun produkmu.</p>
+              </div>
+              <div class="principle reveal">
+                <span>02</span>
+                <h3>Curious by nature</h3>
+                <p>Kami memberi ruang untuk mencoba, bertanya, dan menemukan bentuk yang tak terduga.</p>
+              </div>
+              <div class="principle reveal">
+                <span>03</span>
+                <h3>Craft over clutter</h3>
+                <p>Setiap detail punya alasan. Hasilnya jernih, berkarakter, dan tidak terasa berlebihan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-orbit" aria-hidden="true"></div>
+        <div class="section-shell contact-inner reveal">
+          <p class="eyebrow">04 / Start something</p>
+          <h2 id="contact-title">Punya ide yang<br />layak <em>diwujudkan?</em></h2>
+          <div class="contact-bottom">
+            <p>Ceritakan idemu. Kita cari bentuk terbaiknya bersama.</p>
+            <a class="contact-link" href="mailto:muhammad-amien@draxis-digital.my.id">
+              <span>muhammad-amien@draxis-digital.my.id</span><span>↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="brand footer-brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">D<span>/</span></span>
+        <span class="brand-name">Draxis<br />Digital</span>
+      </a>
+      <p>© <span data-year></span> Draxis Digital. Made with intent in Indonesia.</p>
+      <div class="footer-links">
+        <a href="https://github.com/amiencoy" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
