@@ -708,7 +708,7 @@ button {
 }
 
 .contact h2 em {
-  color: var(--ink);
+  color: var(--deep);
   text-decoration: underline;
   text-decoration-thickness: 0.055em;
   text-underline-offset: 0.1em;
@@ -733,7 +733,7 @@ button {
   justify-content: space-between;
   gap: 20px;
   padding: 0 0 20px;
-  border-bottom: 2px solid var(--ink);
+  border-bottom: 2px solid var(--deep);
   font-size: clamp(18px, 3vw, 46px);
   font-weight: 600;
   letter-spacing: -0.045em;
